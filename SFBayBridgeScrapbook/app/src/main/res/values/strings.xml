@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">SF Bay Bridge Scrapbook</string>
+    <string name="app_name" translatable="false">SF Bay Bridge Scrapbook</string>
+    <string name="sm_bridge" translatable="false">San Mateo Bridge Image</string>
+    <string name="sf_bay_bridge" translatable="false">San Francisco Bay Bridge Image</string>
+    <string name="sf_golden_gate_bridge" translatable="false">San Francisco Golden Gate Bridge Image</string>
 </resources>
