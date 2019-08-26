@@ -16,6 +16,7 @@
 
         <ImageView
             android:id="@+id/goldengatebridge"
+            android:tooltipText="@string/sf_golden_gate_bridge"
             android:layout_width="wrap_content"
             android:layout_height="254dp"
             android:layout_gravity="top"
@@ -27,6 +28,7 @@
 
         <ImageView
             android:id="@+id/baybridge"
+            android:tooltipText="@string/sf_bay_bridge"
             android:layout_width="wrap_content"
             android:layout_height="234dp"
             android:layout_marginTop="0dp"
@@ -44,6 +46,7 @@
             android:background="#00CF0B0B"
             android:contentDescription="@string/sm_bridge"
             android:scaleType="fitXY"
+            android:tooltipText="@string/sm_bridge"
             app:srcCompat="@drawable/smbridge1024" />
 
     </LinearLayout>
