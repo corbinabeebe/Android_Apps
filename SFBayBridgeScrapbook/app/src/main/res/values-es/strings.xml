@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Álbum de recortes de SF Bay Bridge</string>
+    <string name="sf_bay_bridge" translatable="false">Puente de la bahía de San Francisco</string>
+    <string name="sf_golden_gate_bridge" translatable="false">Imagen del puente Golden Gate de San Francisco</string>
+    <string name="sm_bridge" translatable="false">Imagen del puente de San Mateo</string>
+</resources>
