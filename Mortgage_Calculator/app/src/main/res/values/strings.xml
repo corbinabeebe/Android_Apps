@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Mortgage Calculator</string>
+    <string name="purchase_price_string">Enter Purchase Price</string>
+    <string name="monthly_payment">Monthly\nPayment</string>
+    <string name="enterDownPaymentAmount">Enter Down Payment</string>
+    <string name="enterInterRateAmt">Enter Interest Rate</string>
+    <string name="tenYearPayment">10yr</string>
+    <string name="twentyYear">20yr</string>
+    <string name="loanDuration">Loan\nDuration\n(Years)</string>
+    <string name="thirtyYear">30yr</string>
+    <string name="mortgage_year">15</string>
+    <string name="digits_value">0123456789</string>
+    <string name="interest_digits">.0123456789</string>
+    <string name="calculate_value">Calculate</string>
+</resources>

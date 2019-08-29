@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/mortgage_gridlayout_padding"
+    android:columnCount="4"
+    android:rowCount="8"
+    android:useDefaultMargins="true"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/purchasePriceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:contentDescription="@string/purchase_price_string"
+        android:digits="@string/digits_value"
+        android:ems="10"
+        android:hint="@string/purchase_price_string"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/purchasePriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/background_color"
+        android:elevation="@dimen/elevation"
+        android:gravity="fill_horizontal"
+        android:hint="@string/purchase_price_string"
+        android:padding="@dimen/textview_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/downPaymentEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:contentDescription="@string/enterDownPaymentAmount"
+        android:digits="@string/digits_value"
+        android:ems="10"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/downPaymentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/background_color"
+        android:elevation="@dimen/elevation"
+        android:hint="@string/enterDownPaymentAmount"
+        android:padding="@dimen/textview_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/interestRateEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:contentDescription="@string/enterInterRateAmt"
+        android:digits="@string/interest_digits"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/interestRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="fill_horizontal"
+        android:background="@color/background_color"
+        android:elevation="@dimen/elevation"
+        android:hint="@string/enterInterRateAmt"
+        android:padding="@dimen/textview_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/mPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_rowSpan="2"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_vertical"
+        android:hint="@string/monthly_payment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/mPaymentTenTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:background="@color/mp_background"
+        android:elevation="@dimen/elevation"
+        android:ems="4"
+        android:padding="@dimen/mp_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/tenYearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/tenYearPayment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/mPaymentTwentyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="2"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:background="@color/mp_background"
+        android:elevation="@dimen/elevation"
+        android:ems="4"
+        android:padding="@dimen/mp_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/twentyYearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="2"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/twentyYear"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/mPaymentThirtyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="3"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:background="@color/mp_background"
+        android:elevation="@dimen/elevation"
+        android:ems="4"
+        android:padding="@dimen/mp_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/thirtyYearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="4"
+        android:layout_column="3"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/thirtyYear"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:id="@+id/seekBarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="0"
+        android:layout_columnSpan="1"
+        android:hint="@string/loanDuration"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/seekBarYearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:hint="@string/mortgage_year"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <SeekBar
+        android:id="@+id/mortgageYearsSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="5"
+        android:layout_column="2"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal|center_vertical"
+        android:max="50"
+        android:progress="15" />
+
+    <TextView
+        android:id="@+id/customDurationMPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:contentDescription="@string/monthly_payment"
+        android:text="@string/monthly_payment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/mPaymentCDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="6"
+        android:layout_rowSpan="1"
+        android:layout_column="1"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:background="@color/mp_background"
+        android:elevation="@dimen/elevation"
+        android:gravity="center_vertical"
+        android:padding="@dimen/mp_padding" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:backgroundTint="@color/Calculate_button_color"
+        android:elevation="@dimen/calculate_elevation"
+        android:text="@string/calculate_value"
+        android:textAlignment="center"
+        />
+
+</GridLayout>
