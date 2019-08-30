@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     //currency and percent formatter variables
     private static final NumberFormat currencyFormat = NumberFormat.getCurrencyInstance();
     private static final NumberFormat percentFormat = NumberFormat.getPercentInstance();
-    private static final NumberFormat numberFormat = NumberFormat.getIntegerInstance();
+    private static final NumberFormat integerFormat = NumberFormat.getIntegerInstance();
 
     private double purchaseAmount = 0.00; //purchase price of home
     private double downPayment= 0; //down payment
@@ -129,8 +129,8 @@ public class MainActivity extends AppCompatActivity {
     private void calculateCustomYears(int progress) {
 
         double totalMonths = (double) progress * 12;
-        //format interest rate TextView
-        seekBarYearTextView.setText(numberFormat.format(mortgageYears));
+        //format mortgagYyears TextView
+        seekBarYearTextView.setText(integerFormat.format(mortgageYears));
 
         //calculate mortgage over 10 years
         double loanAmount = purchaseAmount - downPayment;
@@ -217,6 +217,7 @@ public class MainActivity extends AppCompatActivity {
         public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
             try { // get purchase price total and display in currency format
                 interestRate = Double.parseDouble(charSequence.toString()) / 100;
+                percentFormat.setMinimumFractionDigits(2);
                 interestRateTextView.setText(percentFormat.format(interestRate));
             }
             catch (NumberFormatException e) { //if charSequence is empty or non-numeric

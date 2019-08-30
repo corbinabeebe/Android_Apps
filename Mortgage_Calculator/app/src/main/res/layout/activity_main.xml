@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/mortgage_gridlayout_padding"
     android:columnCount="4"
-    android:rowCount="8"
+    android:padding="@dimen/mortgage_gridlayout_padding"
+    android:rowCount="9"
     android:useDefaultMargins="true"
     tools:context=".MainActivity">
 
@@ -18,6 +18,7 @@
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
         android:contentDescription="@string/purchase_price_string"
+        android:cursorVisible="true"
         android:digits="@string/digits_value"
         android:ems="10"
         android:hint="@string/purchase_price_string"
@@ -48,6 +49,7 @@
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
         android:contentDescription="@string/enterDownPaymentAmount"
+        android:cursorVisible="true"
         android:digits="@string/digits_value"
         android:ems="10"
         android:inputType="number"
@@ -76,6 +78,7 @@
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
         android:contentDescription="@string/enterInterRateAmt"
+        android:cursorVisible="true"
         android:digits="@string/interest_digits"
         android:ems="10"
         android:inputType="number|numberDecimal"
@@ -90,6 +93,7 @@
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
         android:background="@color/background_color"
+
         android:elevation="@dimen/elevation"
         android:hint="@string/enterInterRateAmt"
         android:padding="@dimen/textview_padding"
@@ -100,32 +104,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="3"
-        android:layout_rowSpan="2"
+        android:layout_rowSpan="1"
         android:layout_column="0"
         android:layout_columnSpan="1"
         android:layout_gravity="center_vertical"
         android:hint="@string/monthly_payment"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textSize="14sp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/mPaymentTenTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="3"
+        android:layout_row="4"
         android:layout_column="1"
-        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:layout_gravity="start|fill_horizontal"
         android:background="@color/mp_background"
         android:elevation="@dimen/elevation"
-        android:ems="4"
+        android:ems="5"
         android:padding="@dimen/mp_padding"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/tenYearTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="4"
+        android:layout_row="3"
         android:layout_column="1"
         android:layout_columnSpan="1"
         android:layout_gravity="center_horizontal"
@@ -136,21 +141,22 @@
         android:id="@+id/mPaymentTwentyTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="3"
+        android:layout_row="4"
         android:layout_column="2"
         android:layout_columnSpan="1"
-        android:layout_gravity="center_horizontal|fill_horizontal"
+        android:layout_gravity="start|fill_horizontal"
         android:background="@color/mp_background"
         android:elevation="@dimen/elevation"
-        android:ems="4"
+        android:ems="5"
         android:padding="@dimen/mp_padding"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/twentyYearTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="4"
+        android:layout_row="3"
         android:layout_column="2"
         android:layout_columnSpan="1"
         android:layout_gravity="center_horizontal"
@@ -161,21 +167,22 @@
         android:id="@+id/mPaymentThirtyTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="3"
+        android:layout_row="4"
         android:layout_column="3"
         android:layout_columnSpan="1"
         android:layout_gravity="center_horizontal|fill_horizontal"
         android:background="@color/mp_background"
         android:elevation="@dimen/elevation"
-        android:ems="4"
+        android:ems="5"
         android:padding="@dimen/mp_padding"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textSize="14sp" />
 
     <TextView
         android:id="@+id/thirtyYearTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_row="4"
+        android:layout_row="3"
         android:layout_column="3"
         android:layout_columnSpan="1"
         android:layout_gravity="center_horizontal"
@@ -190,7 +197,8 @@
         android:layout_column="0"
         android:layout_columnSpan="1"
         android:hint="@string/loanDuration"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/seekBarYearTextView"
@@ -218,7 +226,8 @@
         android:layout_gravity="center_horizontal|top"
         android:contentDescription="@string/monthly_payment"
         android:text="@string/monthly_payment"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/mPaymentCDTextView"
@@ -238,12 +247,12 @@
         android:id="@+id/calculateButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_row="8"
         android:layout_column="2"
         android:layout_gravity="center_horizontal|fill_horizontal"
         android:backgroundTint="@color/Calculate_button_color"
         android:elevation="@dimen/calculate_elevation"
         android:text="@string/calculate_value"
-        android:textAlignment="center"
-        />
+        android:textAlignment="center" />
 
 </GridLayout>
