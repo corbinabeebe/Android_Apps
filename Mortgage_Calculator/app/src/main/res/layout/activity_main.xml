@@ -17,11 +17,11 @@
         android:layout_column="0"
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
-        android:contentDescription="@string/purchase_price_string"
         android:cursorVisible="true"
         android:digits="@string/digits_value"
         android:ems="10"
         android:hint="@string/purchase_price_string"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
@@ -48,10 +48,11 @@
         android:layout_column="0"
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
-        android:contentDescription="@string/enterDownPaymentAmount"
         android:cursorVisible="true"
         android:digits="@string/digits_value"
         android:ems="10"
+        android:hint="@string/enterDownPaymentAmount"
+        android:importantForAutofill="no"
         android:inputType="number"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
@@ -77,10 +78,11 @@
         android:layout_column="0"
         android:layout_columnSpan="4"
         android:layout_gravity="fill_horizontal"
-        android:contentDescription="@string/enterInterRateAmt"
         android:cursorVisible="true"
         android:digits="@string/interest_digits"
         android:ems="10"
+        android:hint="@string/enterInterRateAmt"
+        android:importantForAutofill="no"
         android:inputType="number|numberDecimal"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
@@ -120,6 +122,7 @@
         android:layout_column="1"
         android:layout_gravity="start|fill_horizontal"
         android:background="@color/mp_background"
+        android:contentDescription="@string/mTenYrPay"
         android:elevation="@dimen/elevation"
         android:ems="5"
         android:padding="@dimen/mp_padding"
@@ -146,6 +149,7 @@
         android:layout_columnSpan="1"
         android:layout_gravity="start|fill_horizontal"
         android:background="@color/mp_background"
+        android:contentDescription="@string/mTwentyYearPay"
         android:elevation="@dimen/elevation"
         android:ems="5"
         android:padding="@dimen/mp_padding"
@@ -172,6 +176,7 @@
         android:layout_columnSpan="1"
         android:layout_gravity="center_horizontal|fill_horizontal"
         android:background="@color/mp_background"
+        android:contentDescription="@string/mthirtyYearPay"
         android:elevation="@dimen/elevation"
         android:ems="5"
         android:padding="@dimen/mp_padding"
@@ -216,6 +221,7 @@
         android:layout_column="2"
         android:layout_columnSpan="2"
         android:layout_gravity="fill_horizontal|center_vertical"
+        android:contentDescription="@string/mortgageYearSeekBar"
         android:max="50"
         android:progress="15" />
 

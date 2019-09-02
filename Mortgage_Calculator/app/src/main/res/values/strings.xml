@@ -12,4 +12,8 @@
     <string name="digits_value">0123456789</string>
     <string name="interest_digits">.0123456789</string>
     <string name="calculate_value">Calculate</string>
+    <string name="mTenYrPay">monthly ten year payment</string>
+    <string name="mTwentyYearPay">monthly twenty year payment</string>
+    <string name="mthirtyYearPay">monthly thirty year payment</string>
+    <string name="mortgageYearSeekBar">Slide to select custom morgage year</string>
 </resources>
