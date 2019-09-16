@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mortgage_gridlayout_padding">16dp</dimen>
+    <dimen name="elevation">8dp</dimen>
+    <dimen name="textview_padding">10dp</dimen>
+    <dimen name="mp_padding">8dp</dimen>
+    <dimen name="calculate_elevation">10dp</dimen>
+</resources>

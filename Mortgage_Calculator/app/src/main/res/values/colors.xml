@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="background_color">#F3067958</color>
+    <color name="mp_background">#D782BDA8</color>
+    <color name="Calculate_button_color">#E91E63</color>
+</resources>
