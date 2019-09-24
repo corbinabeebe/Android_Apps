@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="sign_type_list">
+        <item>Guide_Signs</item>
+        <item>Regulatory_Signs</item>
+        <item>School_Signs</item>
+        <item>Traffic_Signs</item>
+        <item>Warning_Signs</item>
+    </string-array>
+
+    <string-array name="sign_type_list_for_settings">
+        <item>Guide Signs</item>
+        <item>Regulatory Signs</item>
+        <item>School Signs</item>
+        <item>Traffic Signs</item>
+        <item>Warning Signs</item>
+    </string-array>
+
+    <string-array name="guesses_list">
+        <item>2</item>
+        <item>4</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+
+</resources>
