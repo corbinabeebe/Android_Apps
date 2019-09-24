@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
     }
 
+    //used to set the alarm on or off
     public void OnToggleClicked(View view) {
         long time;
         if(((ToggleButton) view).isChecked()) {
@@ -70,7 +71,10 @@ public class MainActivity extends AppCompatActivity {
             }
             alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, time, 10000, pendingIntent);
         } else {
+            Intent intent = new Intent(this, AlarmReceiver.class);
+            pendingIntent = pendingIntent.getBroadcast(this, 0, intent, 0);
             alarmManager.cancel(pendingIntent);
+            pendingIntent.cancel();
             Toast.makeText(MainActivity.this, "ALARM OFF", Toast.LENGTH_SHORT).show();
         }
     }
