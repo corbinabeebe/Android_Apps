@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     TimePicker alarmTimePicker;
     PendingIntent pendingIntent;
     AlarmManager alarmManager;
+    //todo -  change from toggle button to a set button and a off button
 
 
     @Override
@@ -49,6 +50,38 @@ public class MainActivity extends AppCompatActivity {
         alarmTimePicker = findViewById(R.id.timePicker);
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
     }
+    //todo
+    //onclick change listener to turn on alarm
+    /**
+     * Toast.makeText(MainActivity.this, "ALARM ON", Toast.LENGTH_SHORT).show();
+     *             Calendar calendar = Calendar.getInstance();
+     *             calendar.set(Calendar.HOUR_OF_DAY, alarmTimePicker.getHour());
+     *             calendar.set(Calendar.MINUTE, alarmTimePicker.getMinute());
+     *             Intent intent = new Intent(this, AlarmReceiver.class);
+     *             pendingIntent = pendingIntent.getBroadcast(this, 0, intent, 0);
+     *
+     *             time = (calendar.getTimeInMillis() - (calendar.getTimeInMillis() % 60000));
+     *             if(System.currentTimeMillis() > time) {
+     *                 if(calendar.AM_PM == 0) {
+     *                     time = time + (1000 * 60 * 60 * 12);
+     *                 } else {
+     *                     time = time + (1000 * 60 * 60 * 24);
+     *                 }
+     *             }
+     *             alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, time, 10000, pendingIntent);
+     *
+     * */
+    //todo
+    //onclick listener to turn off alarm
+    /**
+     *  Intent intent = new Intent(this, AlarmReceiver.class);
+     *             pendingIntent = pendingIntent.getBroadcast(this, 0, intent, 0);
+     *             alarmManager.cancel(pendingIntent);
+     *             pendingIntent.cancel();
+     *             Toast.makeText(MainActivity.this, "ALARM OFF", Toast.LENGTH_SHORT).show();
+     *
+     *
+     * */
 
     //used to set the alarm on or off
     public void OnToggleClicked(View view) {
