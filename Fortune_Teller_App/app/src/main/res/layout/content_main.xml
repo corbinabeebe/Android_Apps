@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/fortune_description"
+        android:textSize="@dimen/description_text_size"/>
+
+    <ImageButton
+        android:id="@+id/fortuneImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/whatsMyFortune"
+        android:elevation="6dp"
+        android:src="@drawable/img_crystal"
+        android:background="@drawable/image_button_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    <TextView
+        android:id="@+id/fortuneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:textColor="@color/fortuneTextViewColor"
+        android:textColorHint="@color/fortuneTextViewColor"
+        android:textSize="@dimen/fortune_text_size"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/fortuneImageButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
