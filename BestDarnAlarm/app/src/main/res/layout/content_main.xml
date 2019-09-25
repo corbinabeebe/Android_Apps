@@ -39,15 +39,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textClock" />
 
-    <ToggleButton
-        android:id="@+id/alarmToggleButton"
-        android:layout_width="95dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginTop="80dp"
-        android:checked="false"
-        android:onClick="OnToggleClicked"
+    <Button
+        android:id="@+id/setAlarmButton"
+        android:layout_width="151dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="60dp"
+        android:background="#6100FF04"
+        android:text="@string/set_alarm_button_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/alarmOffButton"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker" />
+
+    <Button
+        android:id="@+id/alarmOffButton"
+        android:layout_width="143dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="32dp"
+        android:background="#6100FF04"
+        android:text="@string/turn_off_alarm_button_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/timePicker" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
