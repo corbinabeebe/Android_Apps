@@ -1,2 +1,4 @@
 # Android_Apps
-Android Apps made in CSC475 at CSU Global
+Contains Android Apps made on my free time and for class projects in CSC475 at CSU Global.
+
+
